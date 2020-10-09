@@ -2,6 +2,7 @@ import threading
 from wsgiref import simple_server
 
 import prometheus_client
+import prometheus_client.core
 
 
 def start_metrics_server(host, port, family, registry=prometheus_client.REGISTRY):

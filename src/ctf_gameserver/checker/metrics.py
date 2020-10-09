@@ -3,6 +3,7 @@ import queue
 from wsgiref import simple_server
 
 import prometheus_client
+import prometheus_client.core
 
 from ctf_gameserver.lib.metrics import SilentHandler
 
