@@ -56,7 +56,7 @@ def main():
                                   team_regex)
             break
         except socket.gaierror as e:
-            if e.errno != socket.EAI_ADDRFAMILY:
+            if e.errno not in  [socket.EAI_ADDRFAMILY, socket.EAI_NONAME]:
                 raise
 
     daemon.notify("READY=1")
