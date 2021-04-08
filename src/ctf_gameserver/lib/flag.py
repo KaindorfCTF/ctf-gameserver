@@ -13,7 +13,7 @@ PAYLOAD_LEN = 8
 # timestamp + team + service + payload
 DATA_LEN = 4 + 2 + 1 + PAYLOAD_LEN
 # Flag prefix
-PREFIX = "FAUST"
+PREFIX = "KDCTF"
 # Flag validity in seconds
 VALID = 900
 
